@@ -5,274 +5,693 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo_new.PNG" type="image/x-icon">
-    <title>Coders Arena</title>
+    <link rel="shortcut icon" href="./images/SR_black_logo.png" type="image/x-icon">
+    <title>Shaurya Racing</title>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dda7a08063.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+  
     
     
 </head>
 
 <body>
-
-    <!--nav bar starting-->
-
-    <nav class="bg-primary">
-       <div class="container">
-        <div class="nav-wrapper">
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <a href="#" class="brand-logo ">Coders Arena</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-            <li><a href="courses.html"><i class="material-icons left">import_contacts</i>Courses</a></li>
-            <li><a href="about_us.html"><i class="material-icons left">info</i>About Us</a></li>
-            <li><a href="contact_us.php"><i class="material-icons left">call</i>Contact</a></li>
-            <li><a href="register.php"><i class="material-icons left">account_circle</i>Login/Sign-Up</a></li>
-            
-          </ul>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <a href="#" class="logo-container">
+                <img src="images/SR Logo White Vector.png" alt="SHAURYA RACING Logo" class="logo-icon">
+            </a>
         </div>
-    </div>
-      </nav>
-
-      <!--end of nav bar-->
-
-      <!--start of side nav bar for mobile-->
-
-  <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/side_bar_bg.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="images/my_photo.png"></a>
-      <a href="#name"><span class="white-text name">Dwijsinh H Gohil</span></a>
-      <a href="dwijgohil24@gmail.com"><span class="white-text email">dwijgohil24@gmail.com</span></a>
-    </div></li>
-    <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-            <li><a href="courses.html"><i class="material-icons left">import_contacts</i>Courses</a></li>
-            <li><a href="about_us.html"><i class="material-icons left">info</i>About Us</a></li>
-            <li><a href="contact_us.php"><i class="material-icons left">call</i>Contact</a></li>
-            <li><a href="register.php"><i class="material-icons left">account_circle</i>Login/Sign-Up</a></li>
-
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Connect With Us</a></li>
-    <li><a class="waves-effect" href="https://www.youtube.com/channel/UCv-hJwt6dcm7YMVpFr2Sx_g">Our Youtube Channel</a></li>
+        <div class="desktop-logo">
+            <a href="#" class="logo-container">
+                <img src="images/SR Logo White Vector.png" alt="SHAURYA RACING Logo" class="logo-icon">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About_Us">About Us</a></li>
+            <li><a href="#Our_cars">Our Cars</a></li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="#Our_Gallery">Our Gallery</a></li>
+            <li><a href="#Team_member">Team Members</a></li>
+            <li><a href="#Sponsors">Sponsors</a></li>
+            <li><a href="#Contact_us">Contact Us</a></li>
+        </ul>
+    </nav>
   </ul>
- 
-      <!--end of side nav bar for mobile-->
-
-      <!--start of slider-->
-        <main>
-        <section class="hero">
-            <div class="slider">
-                <ul class="slides">
-                    <li class="slide">
-                        <img src="images/bg-index1.jpg" alt="hero-1">
-                        <div class="caption center-align span">
-                            <h3 class="dark">Coders Arena</h3>
-                            <h5 class="dark">One Stop Destination for best quality<br> free resources related 
-                              coding and development.</h5>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="images/bg-index2_new.jpg" alt="hero-2">
-                        <div class="caption center-align white-text">
-                            <h3 style="color: white;">BE THE BEST</h3>
-                            <h5 style="color: white;" class="light">REST IN THE END NOT IN THE MIDDLE.</h5>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!--end of slider-->
-
-        <!--start of mission/vision section -->
-
-        <section class="about">
-          <div class="col s12 m7">
-            <!--start of typewriter animation html-->
-
-              <h2>OUR - 
-              <span class="txt-type" data-wait="2000" data-words='["MISSION", "VISION"]'></span>
-            </h2>
-
-            <!--end of typewriter animation html-->
-        <h1 id="example">
-        </h1>
+    <section id="Home" class="home">
+        <div class="animate-left">
+            <h1>SHAURYA</h1>
+        </div>
+        <div class="animate-right">
+            <h2>RACING</h2>
+        </div>
+    </section>
+    >
+    <!--About us section-->
+    <section id="About_Us" class="aboutUs">
+        <div class="background-image" style="background-image: url('./images/helmet_bg.JPG');"></div>
+        <div class="content">
+            <h1>Welcome to <span class="highlight-red">Shaurya</span> Racing</h1>
+            <p>Embark on a journey of innovation and speed with Shaurya Racing, an official Formula Student (FSAE) team from VIT, Chennai.</p>
+            <p>At <span class="highlight-red">Shaurya</span> Racing, we don't just build cars; we engineer experiences. Our passion for excellence drives us to participate in prestigious events like Formula Bharat and Supra SAE India.</p>
+            <p>As a team, we push the boundaries of what's possible, translating theoretical knowledge into real-world breakthroughs. Join us as we race towards a future of limitless possibilities.</p>
+        </div>
+    </section>
+    >
+        <!--Our cars section-->
+        <section class="our_cars" id="Our_cars">
+            <h2><span class="our">Our</span> <span class="cars">Cars</span></h2>
         
-        <div class="center-align" class="row">
-          <div class="col s12 m6">
-            <div class="card darken-1">
-              <div class="card-content dark-text">
-                <img style="height: 50%; width: 50%;" src="images/mission.jpg" alt="">
-                <h3>Our mission and Vision At Coders Arena is very clear and simple. <br> We want to help student by providing them best possible quality content at free of cost. </h3>
+            <div class="car-container">
+              
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_9.jpg" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 9.0</h10>
+                  <h9 class="year">2023</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 55Nm</li>
+                      <li>Top Speed - 170Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 2.2:1</li>
+                      <li>Horsepower - 55.5hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>14th Overall</li>
+                      <li>15th in Design Report</li>
+                      <li>20th in Business Report</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="card-action button">
-                <a class="btn-floating red darken-3"><i class="fab fa-youtube"></i></a>
-                <a style="color: orange;" href="https://www.youtube.com/channel/UCv-hJwt6dcm7YMVpFr2Sx_g">LINK TO OUR CHANNEL</a>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_8.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 8.0</h10>
+                  <h9 class="year">2022</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 55Nm</li>
+                      <li>Top Speed - 170Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 2.2:1</li>
+                      <li>Horsepower - 55.5hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>14th Overall</li>
+                      <li>15th in Design Report</li>
+                      <li>20th in Business Report</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_7.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 7.0</h10>
+                  <h9 class="year">2021</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 33Nm</li>
+                      <li>Top Speed - 140Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 3.26:1</li>
+                      <li>Horsepower - 41.2hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>14th Overall</li>
+                      <li>24th in Design Report</li>
+                      <li>17th in Business Report</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_6.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 6.0</h10>
+                  <h9 class="year">2020 </h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 33Nm</li>
+                      <li>Top Speed - 140Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 3.26:1</li>
+                      <li>Horsepower - 41.2hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>15th Overall</li>
+                      <li>29th in Design Report</li>
+                      <li>19th in Business Report</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_5.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 5.0</h10>
+                  <h9 class="year">2019</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 27.44Nm</li>
+                      <li>Top Speed - 130Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 3.2:1</li>
+                      <li>Horsepower - 36hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>5th Overall</li>
+                      <li>3rd in Fuel Efficiency</li>
+                      <li>Cone Lovers of Formula Bharat 2K19</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_4.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 4.0</h10>
+                  <h9 class="year">2018</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 26Nm</li>
+                      <li>Top Speed - 125Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 4.2:1</li>
+                      <li>Horsepower - 32.95hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>12th Overall</li>
+                      <li>9th in Design report</li>
+                      <li>12th in Business presentation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_3.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 3.0</h10>
+                  <h9 class="year">2022</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 24Nm</li>
+                      <li>Top Speed - 114Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 3.8:1 </li>
+                      <li>Horsepower - 30hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>16th Overall</li>
+                      <li> Most popular team of India</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_2.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 2.0</h10>
+                  <h9 class="year">2016</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 20Nm</li>
+                      <li>Top Speed - 100Kmph</li>
+                      <li>Engine - KTM 390cc</li>
+                      <li>Final Drive Ratio - 3.1:1 </li>
+                      <li>Horsepower - 24hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>27th Overall</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <div class="car-image">
+                  <img src="images/our_cars/sr_1.webp" alt="Car 1">
+                </div>
+                <div class="car-details">
+                  <h10>SR 1.0</h10>
+                  <h9 class="year">2015</h9>
+                  <div class="technical-specs">
+                    <h4>Technical Specs:</h4>
+                    <ul>
+                      <li>Torque - 22Nm</li>
+                      <li>Top Speed - 110Kmph</li>
+                      <li>Engine - Royal Enfield Bullet 610cc</li>
+                      <li>Final Drive Ratio - 4.1:1</li>
+                      <li>Horsepower - 27hp</li>
+                    </ul>
+                  </div>
+                  <div class="achievements">
+                    <h4>Achievements:</h4>
+                    <ul>
+                      <li>27th Overall</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>     
-        </section>
-        <!--end of mission/vision section-->
-
-        <!--start of blog section-->
-
-        <section class="blogs">
-                <h4 class="center">Our Short Tech Blogs</h4>
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-light">
-                                <img class="activator" src="images/blog1.jpg" alt="destination-1">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator">Codechef SmackDown 2021 <i class="material-icons right">more_vert</i></span>
-                                <p>Codechef is back with its very well known and famous contest smackdown read this article to know all about smackdown-2021</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title">Hello Fellows <i class="material-icons right">close</i></span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, neque!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-light">
-                                <img class="activator" src="images/side_bar_bg.jpg" alt="destination-2">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator">How To Become Good At Coding <i class="material-icons right">more_vert</i></span>
-                                <p>Here in this we have compiled some of the best resources which will help you to become better at coding . What you are waiting for ?? checkout now!</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title">Hello Fellows <i class="material-icons right">close</i></span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-light">
-                                <img class="activator" src="images/blog3.jpg" alt="destination-3">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator"> Best Resources For WEB-DEV <i class="material-icons right">more_vert</i></span>
-                                <p>In this article you will get each and every resources related to web development be it front end or backend everything is compiled at one place.</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title">Hello Fellows <i class="material-icons right">close</i></span>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, exercitationem.</p>
-                            </div>
-                        </div>
-                    </div>
+          </section>
+        <!--Our cars section ends here-->
+        >
+        <!--Our events section here-->
+        <section class="events" id="Events">
+          
+            <h2><span class="Our">Our</span> <span class="Events">Events</span></h2>
+            <div class="event-container">
+              <div class="event-card">
+                <img src="images/fromula_bharat.jpg" alt="Formula Bharat">
+                <div class="event-details">
+                  <h3 class="event-title">Formula Bharat</h3>
+                  <p class="event-description">
+                    Formula Bharat is an engineering design competition in which students from colleges and universities all over the country, compete with a life-size Formula-style vehicle in areas of engineering design, overall cost, marketability and dynamic performance.
+                    </p>
+                    <p class="event-description">The series replicates the global student Formula series hosted in around 11 countries per year</p>
                 </div>
-        </section>
-        <!--end of blog section-->
+              </div>
+          
+              <div class="event-card">
+                <img src="./images/formula_imperial.jpg" alt="Imperial India Formula Student Racing">
+                <div class="event-details">
+                  <h3 class="event-title">Imperial India Formula Student Racing</h3>
+                  <p class="event-description">
+                    Experience the thrill of Imperial India Formula Student Racing, where we race towards victory, pushing the boundaries of technology and speed.
+                  </p>
+                </div>
+              </div>
+            </div>
+        <button  class="contact-button" onclick="scrollToContact()"x>KNOW MORE</button>
 
-        <!--starting of testimonials-->
+          </section>
+          >
+          <!-- Powertrain Department -->
+          <!-- HTML Structure -->
+<div class="team-members">
+  <h2>Team</h2>
 
-        <section class="testimonials">
-          <h4 class="center">Testimonials <br> See What Our Users Says!!</h4>
-          <div class="carousel">
-              <a href="#" class="carousel-item teal center white-text">
-                  <h5>Antonny</h5>
-                  <p>The best courses i have ever took i enrolled in java course everything was perfectly taught and faculty were also highly educated kudos to team coders arena must buy!! course.</p>
-              </a>
-              <a href="#" class="carousel-item teal center white-text">
-                  <h5>John</h5>
-                  <p>The best courses i have ever took i enrolled in acm-icpc course everything was perfectly taught and faculty were also highly educated kudos to team coders arena must buy!! course.</p>
-              </a>
-              <a href="#" class="carousel-item teal center white-text">
-                  <h5>Margaret</h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod odio eius repellat quos, numquam sint reiciendis adipisci id. Fugiat, totam ipsam! Perspiciatis dolore ullam iure mollitia enim porro reprehenderit blanditiis deleniti! Consequuntur, laborum repellat? Consequatur.</p>
-              </a>
-              <a href="#" class="carousel-item teal center white-text">
-                  <h5>Tommy</h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod odio eius repellat quos, numquam sint reiciendis adipisci id. Fugiat, totam ipsam! Perspiciatis dolore ullam iure mollitia enim porro reprehenderit blanditiis deleniti! Consequuntur, laborum repellat? Consequatur.</p>
-              </a>
-              <a href="#" class="carousel-item teal center white-text">
-                  <h5>Alexander</h5>
-                  <p>The best courses i have ever took i enrolled in front end course everything was perfectly taught and faculty were also highly educated kudos to team coders arena must buy!! course.</p>
-              </a>
-          </div>
-      </section>
+  <!-- Team Captain -->
+  <div class="role">
+    <p class="role-title">Team Captain</p>
+    <p class="member-name">Atharva Joshi</p>
+  </div>
 
+  <!-- Team Management -->
+  <div class="management">
+    <div class="role">
+      <p class="role-title">Team Manager</p>
+      <p class="member-name">Shreyas Khot</p>
+    </div>
+    <div class="role">
+      <p class="role-title">Team Vice Captain</p>
+      <p class="member-name">Dhananjay Pardhi</p>
+    </div>
+    <div class="role">
+      <p class="role-title">Technical Assistant</p>
+      <p class="member-name">Lokesh Bhamre</p>
+    </div>
+  </div>
+
+<!-- Heads of Department -->
+<div class="department-heads">
+  <div class="role">
+    <p class="role-title">Aerodynamics and Composites</p>
+    <p class="member-name">Atharva Joshi</p>
+  </div>
+  <div class="role">
+    <p class="role-title">Brakes</p>
+    <p class="member-name">Manas Patil</p>
+  </div>
+  <div class="role">
+    <p class="role-title">Chassis and Manufacturing</p>
+    <p class="member-name">Shreyas Khot</p>
+  </div>
+  <div class="role">
+    <p class="role-title">Drivetrain and Transmission</p>
+    <p class="member-name">Dhruva Deshpande</p>
+  </div>
+  <div class="role">
+    <p class="role-title">Powertrain and Electronics</p>
+    <p class="member-name">Tanmay Patil</p>
+  </div>
+  <div class="role">
+    <p class="role-title">Vehicle Dynamics (Steering & Suspension)</p>
+    <p class="member-name">Dhananjay Pardhi</p>
+  </div>
+</div>
+
+
+
+
+  <!-- Team Members -->
+  <div class="role">
+    <p class="role-title">Team Members</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+    <p class="member-name">Jay Gaikwad</p>
+    <p class="member-name">Milind Patil</p>
+
+    <!-- Add more members as needed -->
+  </div>
+</div>
+
+          <section id="Contact_us" class="Contact_us">
+
+          </section>
+          >
        <!--ending of testimonials-->
-    </main>
+       <section id="Sponsors" class="sponsor-section" style="background-color: #000; color: #fff; padding: 50px;">
+        <div class="sponsor-images">
+          <!-- Add sponsor images with appropriate source URLs -->
+          <img src="./images/iSpark.jpg" alt="Sponsor 1">
+          <img src="./images/MyPitCrew.jpg" alt="Sponsor 2">
+          <img src="./images/realis.jpg" alt="Sponsor 2">
+          <img src="./images/Raj Petro.jpg" alt="Sponsor 2">
+
+          <!-- Add more sponsor images as needed -->
+        </div>
+      
+        <div class="thank-you-message">
+            <h2><span class="red-text">Special Thanks</span> to Our Sponsors!</h2>
+          <p>We extend our heartfelt gratitude to the sponsors who have supported us throughout our journey.</p>
+        </div>
+      
+        <div class="download-box">
+          <h3>Download Our E-Brochure</h3>
+          <p>Learn more about our achievements and projects by downloading our e-brochure.</p>
+          <a href="link-to-ebrochure.pdf" class="download-link" target="_blank">
+            <div class="clickable-box">
+              <p>Download</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      
 
         <!--java script functionality-->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/share.js"></script>
-    <script src="js/type.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();  
-        M.Slider.init($('.slider'));
-        M.Materialbox.init($('.materialboxed'));
-        M.Parallax.init($('.parallax'));
-        M.Carousel.init($('.carousel'), {
-          indicators: true,
-          shift: 55,
-          dist: 0,
-    });
-      });</script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/share.js"></script>
+        <script src="js/type.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
 
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var slider = M.Slider.init(document.querySelector('.slider'), {
+        indicators: false,
+        height: 900, // Adjust the height as needed
+    });
+    $('.slider').slick({
+  // Other options...
+  autoplay: true,
+  autoplaySpeed: 2000, // Adjust the speed as needed
+});
+    // Adjust the font size based on the image size
+    var slide = document.querySelector('.slide');
+    var titleH3 = document.querySelector('.caption h3');
+    var titleH6 = document.querySelector('.caption h6');
+
+    function adjustTitleFontSize() {
+        var imageSize = slide.clientHeight;
+        var newSize = imageSize / 10; // Adjust this multiplier based on your preference
+
+        if (titleH3) {
+            titleH3.style.fontSize = newSize + 'px';
+        }
+
+        if (titleH6) {
+            titleH6.style.fontSize = newSize + 'px';
+        }
+    }
+
+    // Recalculate and adjust font size when the window is resized
+    window.addEventListener('resize', adjustTitleFontSize);
+
+    M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+    M.Parallax.init(document.querySelectorAll('.parallax'));
+    M.Carousel.init(document.querySelectorAll('.carousel'), {
+        indicators: true,
+        shift: 55,
+        dist: 0,
+    });
+
+    adjustTitleFontSize(); // Call the function on page load
+});
+
+
+        function toggleContent() {
+            var extraContent = document.getElementById('extra-content');
+            var readMoreLink = document.querySelector('.read-more');
+    
+            if (extraContent.style.display === 'none' || extraContent.style.display === '') {
+                extraContent.style.display = 'inline';
+                readMoreLink.textContent = 'Read Less...';
+            } else {
+                extraContent.style.display = 'none';
+                readMoreLink.textContent = 'Read More...';
+            }
+        }
+    </script>
+
+<script >
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuToggle = document.querySelector(".menu-toggle");
+    const mobileNav = document.querySelector(".nav-list");
+
+    mobileMenuToggle.addEventListener("click", function () {
+        mobileNav.classList.toggle("show");
+    });
+});
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.car-container').slick({
+        infinite: true,
+        slidesToShow: 4, // Number of slides to show at a time
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        responsive: [
+          {
+            breakpoint: 768, // Mobile breakpoint
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  
+  <script>
+    function scrollToContact() {
+      var contactSection = document.getElementById('Contact_us');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const teamCarousel = new Glide('#teamCarousel', {
+        type: 'carousel',
+        perView: 3,
+        focusAt: 'center',
+        gap: 20,
+        breakpoints: {
+            768: {
+                perView: 1
+            }
+        }
+    });
+
+    teamCarousel.mount();
+});
+
+</script>
+<script>
+    $(document).ready(function(){
+      $('#teamCarousel').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        variableWidth: true,
+        focusOnSelect: true,
+        infinite: true,
+        swipeToSlide: true, // Enable swiping to specific slides
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+</script>
+<script>
+    // Function to scroll to the next testimonial
+    function scrollToNextTestimonial() {
+      const testimonialContainer = document.querySelector('.testimonial-container');
+      const testimonialItem = document.querySelector('.testimonial-item');
+  
+      // Calculate the width of a single testimonial item including margin
+      const testimonialWidth = testimonialItem.offsetWidth + parseInt(getComputedStyle(testimonialItem).marginRight);
+  
+      // Scroll to the next testimonial with smooth animation
+      testimonialContainer.scrollBy({
+        left: testimonialWidth,
+        behavior: 'smooth'
+      });
+    }
+  </script>
     <!--javascript code ends-->
 
-    <!--share button starts-->
-     
-<div class="fixed-action-btn">
  
-    <a class="btn-floating red pulse"><i class="fas fa-share-alt-square"></i></a>
-     
-    <ul>
-    <li><a class="btn-floating indigo darken-3" id="fb"><i class="fab fa-facebook"></i></a></li>
-    <li><a class="btn-floating light-blue darken-3" id="tw"><i class="fab fa-twitter"></i></a></li>
-    <li><a class="btn-floating green darken-3" id="wts"><i class="fab fa-whatsapp"></i></a></li>
-    <li><a class="btn-floating light-blue darken-3" id="lnk"><i class="fab fa-linkedin"></i></a></li>
-    <li><a class="btn-floating red darken-3" id="gp"><i class="fab fa-google-plus"></i></a></li>
-    </ul>
-     
-    </div>
-            
-    <!--share button ends-->
     
-    <!--footer starts-->
 
-    <footer class="page-footer">
+<!-- Footer starts -->
+<footer class="page-footer bg-dark">
+
+    <!-- Container for the footer content -->
+    <div class="container">
+
+        <!-- First row: Team Logo and Social Icons -->
+        <div class="row">
+
+            <!-- Team Logo - Box 1 -->
+            <div class="col l4 s12 footer-box grey darken-3 flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/SR Logo White Vector.png" alt="Team Logo" class="responsive-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="images/car_image.png" alt="Another Team Image" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Icons and Address - Box 2 -->
+            <div class="col l4 s12 footer-box grey darken-4">
+                <div class="center-align">
+                    <h5 class="white-text">Follow Us On</h5>
+                    <ul class="social-icons">
+                        <li><a href="https://www.youtube.com/channel/your-channel" class="btn-floating red darken-3"><i class="fab fa-youtube"></i></a> YOUTUBE</li>
+                        <li><a href="https://www.linkedin.com/in/your-linkedin-profile" class="btn-floating light-blue darken-3"><i class="fab fa-linkedin"></i></a> LINKEDIN</li>
+                        <li><a href="https://www.instagram.com/your-instagram-profile/" class="btn-floating black darken-3"><i class="fab fa-instagram"></i></a> INSTAGRAM</li>
+    
+                    </ul>
+                    <!-- College Address -->
+                    <div class="white-text">
+                      
+                        <p class="grey-text text-lighten-4">
+                            VIT CHENNAI<br>
+                            VANDALUR - KELAMBAKKAM ROAD, <br>
+                            PINCODE: 600048 <br>
+                            CHENNAI, INDIA<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- College Logo - Box 3 -->
+            <div class="col l4 s12 footer-box grey darken-3 flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/SR_black_logo.png" alt="College Logo" class="responsive-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="images/car_image.png" alt="Another Team Image" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Third row: Back to Top Button -->
+    
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright grey darken-3">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Made with <i class="material-icons ">favorite</i> by DWIJSINH H GOHIL</h5>
-              <p class="grey-text text-lighten-4">DHARMSINH DESAI UNIVERSITY</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Follow Us On</h5>
-              <ul>
-                <li><a class="btn-floating red darken-3" href="https://www.youtube.com/channel/UCv-hJwt6dcm7YMVpFr2Sx_g"><i class="fab fa-youtube"></i></a> YOUTUBE</li>
-                <br>
-                <li><a class="btn-floating light-blue darken-3" href="https://www.linkedin.com/in/dwijsinh-h-gohil-2415521b9"><i class="fab fa-linkedin"></i> </a> Linkdin</li>
-                <br>
-                <li><a class="btn-floating black darken-3" href="https://www.instagram.com/dwijsinh_gohil/"><i class="fab fa-instagram"></i></a> INSTAGRAM</li>
-              </ul>
-            </div>
-          </div>
+            © 2021 Shaurya Racing
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2021 Coders Arena
-          </div>
-        </div>
-      </footer>
+    </div>
 
-      <!--footer ends here-->
+</footer>
+<!-- Footer ends -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>

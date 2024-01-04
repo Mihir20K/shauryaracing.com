@@ -1,165 +1,765 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://db.onlinewebfonts.com/c/abf8d4815b7b0c06e3e0cb4431e9853e?family=Speedster');
 
-.bg-primary{
-    background: linear-gradient(to right,#fc00ff,#00dbde )!important;
-}
-.dark{
-    color: black;
+html {
+  font-size: 65.5%;
 }
 
-h1, h2 {
-    font-weight: 200;
-    font-family: 'Poppins',sans-serif;
-    margin: 0.4rem;
-  }
-  
-  h1 {
-    font-size: 5vw;
-    font-family: 'Poppins',sans-serif;
-  }
-  
-  h2 {
-    font-size: 5vw;
-    font-family: 'Poppins',sans-serif;
-    color: black;
-  }
-  h4{
-    font-size: 5vw;
-    font-family: 'Poppins',sans-serif;
-    color: black;
-
-  }
-  
-  /* Cursor */
-  .txt-type > .txt {
-    border-right: 0.2rem solid black;
-  }
-  
-  @media(min-width: 1200px) {
-    h1 {
-      font-size: 5vw;
-      font-family: 'Poppins',sans-serif;
-    }
-  }
-  
-  @media(max-width: 800px) {
-    h1 {
-      font-size: 5vw;
-      font-family: 'Poppins',sans-serif;
-    }
-  }
-  
-  @media(max-width: 500px) {
-    h1 {
-      font-size: 5vw;
-      font-family: 'Poppins',sans-serif;
-    }
-  
-    h2 {
-      font-size: 5vw;
-      font-family: 'Poppins',sans-serif;
-    }
-  }
-
-.my-circle{
-    height: 60.0px;
-    width: 60.0px;
-    position: center;
-}
+/* Body styles */
 body {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
-.about {
-  padding-top: 40px;
-  padding-bottom: 80px;
+.navbar {
+  background-color: #070707;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo-icon {
+  width: 60px; /* Adjust the width to your preference */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.about h4 {
-  font-weight: 500;
-  margin-bottom: 50px;
-  letter-spacing: .1rem;
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.about .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.nav-list li {
+  margin: 0 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .about__desc button {
-    margin-bottom: 50px;
+.nav-list a {
+  text-decoration: none;
+  color: #ca1d1d;
+  font-size: 1.5rem; /* Adjust the font size for the headings */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #00bfff;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ca1d1d;
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+  }
+  .desktop-logo {
+    display: none; /* Hide the logo on mobile view */
+}
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      background-color: #070707;
+      text-align: center;
+      left: 0;
+      top: 60px; /* Adjust this value based on your header's height */
+      z-index: 1;
+  }
+
+  .nav-list.show {
+      display: flex;
   }
 }
 
-.box{
-    position: absolute;
-    left: 50%;
-    
-    padding: 20.0px;
 
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex ;
-    
-}
-.box .img_box{
-    width: 150.0px;
-    flex: 50px 0 150px;
-}
-.box .img_box img{
-    max-width: 500.0px;
-}
-.box .content{
-    padding-left: 20.0px;
-    text-align: justify;
+/* General Home section styles */
+/* Home section styles */
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/Potrait.JPG');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Adjust to center horizontally */
+  flex-flow: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden !important;
+  background-attachment: fixed; /* Fixed background */
 }
 
-.about .container{
-    height: 1000.0px;
-    width: 500.0px;
-    position: relative;
+/* Animation styles */
+.animate-left {
+  animation: slideInLeft 1.5s forwards;
+  opacity: 0;
 }
 
-.about_image{
-    height: 50.0px;
-    width: 50.0px;
-  
+.animate-right {
+  animation: slideInRight 1.5s forwards;
+  opacity: 0;
 }
 
-.destinations {
-  background: var(--color-secondary);
-  padding-top: 80px;
-  padding-bottom: 80px;
+/* Animation keyframes */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.destinations h4 {
-  font-weight: 500;
-  margin-bottom: 50px;
-  letter-spacing: .1rem;
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.testimonials {
-  padding-top: 80px;
-  padding-bottom: 80px;
+/* Media query for mobile */
+@media (max-width: 768px) {
+  /* Mobile Navbar styles */
+  #mobile-nav {
+    background-color: #070707;
+  }
+
+  /* Mobile Navbar link styles */
+  #mobile-nav a {
+    color: #e0c600;
+    transition: color 0.3s ease-in-out;
+  }
+
+  /* Mobile Navbar link hover styles */
+  #mobile-nav a:hover {
+    color: #00bfff;
+  }
+
+  /* Mobile Home section styles */
+  .home {
+    background-image: url('../images/front.jpg');
+  }
+
+  /* Mobile Animation styles */
+  .animate-left,
+  .animate-right {
+    text-align: center;
+  }
+/* Mobile Heading styles */
+.home h1,
+.home h2 {
+  font-size: 12vw !important; /* Adjust the font size for tablets and mobiles */
+  max-width: 80%; /* Limit the maximum width on smaller screens */
+  text-align: center; /* Ensure text alignment is centered */
+  margin-top: 0% !important; /* Adjust the margin-top for spacing on tablets and mobiles */
+  margin-bottom: 0% !important; /* Adjust to fine-tune the vertical spacing for SHAURYA */
 }
 
-.testimonials h4 {
-  margin-bottom: 50px;
-  font-weight: 500;
-  letter-spacing: .1rem;
+.home h2 {
+  margin-bottom: 95% !important; /* Adjust to fine-tune the vertical spacing for RACING */
 }
 
-.testimonials .carousel-item {
+
+}
+
+/* Home section heading styles for desktop */
+.home h1,
+.home h2 {
+  font-family: 'Siegra';
+  margin-bottom: 0;
+}
+/* Home section heading styles for desktop */
+.home h1 {
+  color: #ca1d1d;
+  font-size: 7vw; /* Adjust the font size for desktop view using viewport width */
+  margin-top: 0vh;
+  margin-right: 25vw; /* Adjust the margin from the top for desktop view */
+}
+
+.home h2 {
+  color: #f5f2f2;
+  font-size: 7vw; /* Adjust the font size for desktop view using viewport width */
+  margin-bottom: 36rem; 
+  margin-left: 30vw;
+}
+
+
+/* Add more styles for other elements as needed */
+.aboutUs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/helmet_bg.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Set the background to be fixed */
+  background-position: center bottom 20%;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); /* Adjust brightness for overlay effect */
+}
+
+.content {
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'Siegra';
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-red {
+  color: #ca1d1d; /* Red color for Shaurya */
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #fff;
+}
+
+/* Optional: Add animation for a subtle effect */
+.aboutUs h1,
+.aboutUs p {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+
+
+/* Optional: Add animation for a subtle effect */
+.aboutUs h1,
+.aboutUs p {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards; /* Adjusted duration to 1.5 seconds */
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Our_cars Section*/
+
+.our_cars {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/team_car.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Set the background to be fixed */
+  background-position: center bottom 20%;
+}
+.our_cars h2{
+  font-family: 'Siegra';
+  font-size: 5rem;
+  margin-bottom: 1rem;
+
+}
+.our_cars h2 span.our {
+  color: #ca1d1d; /* Red color for "OUR" */
+}
+
+.our_cars h2 span.cars {
+  color: #ffffff; /* White color for "Cars" */
+}
+.our_cars ul li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car-card {
   width: 300px;
-  min-height: 100%;
-  padding: 1rem;
+  margin-right: 20px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.car-image img {
+  width: 100%;
+  height: auto;
+}
+
+.car-details {
+  padding: 20px;
+}
+
+.technical-specs,
+.achievements {
+  margin-top: 20px;
+}
+
+h2, h3, h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+h10 {
+  font-family: 'Siegra'; 
+color: #ca1d1d;
+font-size: 3vw;
+   
+}
+
+h9
+{
+  font-family: 'Siegra'; 
+color: #fafafa;
+font-size: 1vw;
+}
+
+/* our cars*/
+/* our events*/
+.events {
+  padding: 50px;
+  background: #010101;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/fb_event.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Set the background to be fixed */
+  background-position: center bottom 20%;
+}
+.events h2 span.Our {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  color: #ca1d1d; /* Red color for "OUR" */
+  margin-bottom: 1rem;
+}
+
+.events h2 span.Events {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  color: #ffffff; /* White color for "Cars" */
+  margin-bottom: 1rem;
+}
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.event-card {
+  width: 400px;
+  background:  #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-details {
+  padding: 20px;
+}
+
+.event-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff1a1a; /* Red color for event titles */
+}
+
+.event-description {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.contact-button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px; 
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .contact-button {
+    margin-top: 10px; /* Adjust the margin-top for mobile */
+  }
+}
+
+
+/* Our team members */
+/* CSS Styles */
+.team-members {
+  padding: 50px;
+  background: #010101;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom 20%;
+  color: #ffffff;
+}
+
+
+.team-members h2 {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.role {
+  margin-bottom: 1rem;
+}
+
+.role-title {
+  font-family: 'Siegra';
+  font-size: 2rem;
+  color: #ff1a1a;
+}
+/* Set a fixed height for role containers */
+.department-heads .role {
+  height: 80px; /* Adjust the height as needed */
+  /* Add other styling properties as needed */
+}
+
+/* Adjust styling for role titles and member names */
+.department-heads .role-title,
+.department-heads .member-name {
+  margin: 0; /* Reset margin */
+}
+
+
+
+.member-name {
+  margin-bottom: 0.5  rem;
+}
+
+.management {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Adjust styling as needed */
+
+
+/*sponsor*/
+.sponsor-section {
+  
+  padding: 50px;
+  background: #010101;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/team_car.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Set the background to be fixed */
+  background-position: center bottom 20%;
+}
+
+.sponsor-images img {
+  width: 200px; /* Set the width of sponsor images */
+  margin: 10px; /* Add space around each sponsor image */
+}
+.red-text {
+  color: #ff0026; /* Red color */
+}
+.thank-you-message {
+  margin-top: 20px; /* Add space between sponsor images and thank you message */
+}
+.thank-you-message h2{
+  font-family: 'Siegra';
+}
+.thank-you-message p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.download-box {
+  margin-top: 40px; /* Add space between thank you message and download box */
+}
+.download-box h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.download-box p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.clickable-box {
+  display: inline-block;
+  padding: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clickable-box p{
+  font-family: 'Siegra';
+  color: #ca1d1d;
+}
+.download-link {
+  text-decoration: none;
+  color: #f60000;
+}
+
+/*footer section*/
 .page-footer {
-  background: linear-gradient(to right,#fc00ff,#00dbde )!important;
+  background:#000000;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 13px;
+}
+@font-face {
+  font-family: "Racing Games";
+  font-family: 'Speedster'; 
+  src: url('../fonts/Speedster.ttf') format('truetype'); 
+  src: url('../fonts/Speedster.otf') format('opentype'); 
+  
+  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot");
+  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.svg#Speedster")format("svg");
+}
+@font-face{
+  font-family: "Siegra";
+  src: url('../fonts/Siegra.ttf') format('truetype'); 
+  src: url('../fonts/Siegra.otf') format('opentype'); 
+}
+
+#example {
+  background-color: #1f1f1f;
+  padding: 50px 0;
+}
+
+.card {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #ff0026;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: #ff0026;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #fff;
+}
+
+.hero img {
+  object-position: center top; /* Adjust this to move the image up in the slider */
+}
+
+.about .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about .card {
+  position: relative;
+  height: 400px; /* Increase the height of the card */
+}
+
+.about .card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.flip-container {
+  perspective: 1000px;
+  height: 400px; /* Increase the height of the flip container */
+}
+
+.flip-container:hover .flipper,
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+.flip-box {
+  display: flex;
+  align-items: stretch;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.footer-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.social-icons {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.social-icons li {
+  margin-bottom: 10px; /* Add space between each social icon */
+}
+
+.social-icons a {
+  margin-right: 10px; /* Add space between the icon and the text */
+}
+.flip-box-back {
+  transform: rotateY(180deg);
 }
