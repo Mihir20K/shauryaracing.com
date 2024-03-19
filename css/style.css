@@ -20,9 +20,12 @@ body {
   align-items: center;
   padding: 1rem 2rem;
 }
+
 .logo-icon {
-  width: 60px; /* Adjust the width to your preference */
-  height: auto; /* Maintain aspect ratio */
+  width: 60px;
+  /* Adjust the width to your preference */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 .nav-list {
@@ -39,7 +42,9 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #ca1d1d;
-  font-size: 1.5rem; /* Adjust the font size for the headings */
+  font-size: 1.5rem;
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
@@ -62,26 +67,29 @@ body {
 
 @media (max-width: 768px) {
   .menu-toggle {
-      display: flex;
+    display: flex;
   }
+
   .desktop-logo {
-    display: none; /* Hide the logo on mobile view */
-}
+    display: none;
+    /* Hide the logo on mobile view */
+  }
 
   .nav-list {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      background-color: #070707;
-      text-align: center;
-      left: 0;
-      top: 60px; /* Adjust this value based on your header's height */
-      z-index: 1;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #070707;
+    text-align: center;
+    left: 0;
+    top: 60px;
+    /* Adjust this value based on your header's height */
+    z-index: 1;
   }
 
   .nav-list.show {
-      display: flex;
+    display: flex;
   }
 }
 
@@ -91,19 +99,32 @@ body {
 .home {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/Potrait.JPG');
+  background-image: url('../images/our_cars/sr_10.JPG');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center; /* Adjust to center horizontally */
+  justify-content: center;
+  /* Adjust to center horizontally */
   flex-flow: column;
   flex-direction: column;
   text-align: center;
   padding: 0 1rem;
   position: relative;
   overflow: hidden !important;
-  background-attachment: fixed; /* Fixed background */
+  background-attachment: fixed;
+}
+
+.home home-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
 }
 
 /* Animation styles */
@@ -123,6 +144,7 @@ body {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -134,6 +156,7 @@ body {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -142,6 +165,7 @@ body {
 
 /* Media query for mobile */
 @media (max-width: 768px) {
+
   /* Mobile Navbar styles */
   #mobile-nav {
     background-color: #070707;
@@ -168,19 +192,26 @@ body {
   .animate-right {
     text-align: center;
   }
-/* Mobile Heading styles */
-.home h1,
-.home h2 {
-  font-size: 12vw !important; /* Adjust the font size for tablets and mobiles */
-  max-width: 80%; /* Limit the maximum width on smaller screens */
-  text-align: center; /* Ensure text alignment is centered */
-  margin-top: 0% !important; /* Adjust the margin-top for spacing on tablets and mobiles */
-  margin-bottom: 0% !important; /* Adjust to fine-tune the vertical spacing for SHAURYA */
-}
 
-.home h2 {
-  margin-bottom: 95% !important; /* Adjust to fine-tune the vertical spacing for RACING */
-}
+  /* Mobile Heading styles */
+  .home h1,
+  .home h2 {
+    font-size: 12vw !important;
+    /* Adjust the font size for tablets and mobiles */
+    max-width: 80%;
+    /* Limit the maximum width on smaller screens */
+    text-align: center;
+    /* Ensure text alignment is centered */
+    margin-top: 0% !important;
+    /* Adjust the margin-top for spacing on tablets and mobiles */
+    margin-bottom: 0% !important;
+    /* Adjust to fine-tune the vertical spacing for SHAURYA */
+  }
+
+  .home h2 {
+    margin-bottom: 95% !important;
+    /* Adjust to fine-tune the vertical spacing for RACING */
+  }
 
 
 }
@@ -191,18 +222,22 @@ body {
   font-family: 'Siegra';
   margin-bottom: 0;
 }
+
 /* Home section heading styles for desktop */
 .home h1 {
   color: #ca1d1d;
-  font-size: 7vw; /* Adjust the font size for desktop view using viewport width */
-  margin-top: 0vh;
-  margin-right: 25vw; /* Adjust the margin from the top for desktop view */
+  font-size: 7vw;
+  /* Adjust the font size for desktop view using viewport width */
+  margin-top: 35vh;
+  margin-right: 25vw;
+  /* Adjust the margin from the top for desktop view */
 }
 
 .home h2 {
   color: #f5f2f2;
-  font-size: 7vw; /* Adjust the font size for desktop view using viewport width */
-  margin-bottom: 36rem; 
+  font-size: 7vw;
+  /* Adjust the font size for desktop view using viewport width */
+  margin-bottom: 36rem;
   margin-left: 30vw;
 }
 
@@ -223,7 +258,8 @@ body {
   background-image: url('../images/helmet_bg.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Set the background to be fixed */
+  background-attachment: fixed;
+  /* Set the background to be fixed */
   background-position: center bottom 20%;
 }
 
@@ -236,7 +272,8 @@ body {
   z-index: -1;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.5); /* Adjust brightness for overlay effect */
+  filter: brightness(0.5);
+  /* Adjust brightness for overlay effect */
 }
 
 .content {
@@ -250,7 +287,8 @@ h1 {
 }
 
 .highlight-red {
-  color: #ca1d1d; /* Red color for Shaurya */
+  color: #ca1d1d;
+  /* Red color for Shaurya */
 }
 
 p {
@@ -269,12 +307,13 @@ p {
 
 @keyframes fadeInUp {
   from {
-      transform: translateY(20px);
-      opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
   }
+
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -285,17 +324,19 @@ p {
 .aboutUs h1,
 .aboutUs p {
   opacity: 0;
-  animation: fadeInUp 1.5s ease-out forwards; /* Adjusted duration to 1.5 seconds */
+  animation: fadeInUp 1.5s ease-out forwards;
+  /* Adjusted duration to 1.5 seconds */
 }
 
 @keyframes fadeInUp {
   from {
-      transform: translateY(20px);
-      opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
   }
+
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -312,43 +353,50 @@ p {
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/team_car.JPG');
+  background-image: url('../images/cockpit.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Set the background to be fixed */
+  background-attachment: fixed;
+  /* Set the background to be fixed */
   background-position: center bottom 20%;
 }
-.our_cars h2{
-  font-family: 'Siegra';
-  font-size: 5rem;
-  margin-bottom: 1rem;
 
-}
-.our_cars h2 span.our {
-  color: #ca1d1d; /* Red color for "OUR" */
-}
-
-.our_cars h2 span.cars {
-  color: #ffffff; /* White color for "Cars" */
-}
-.our_cars ul li {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5rem;
-}
 .car-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .car-card {
-  width: 300px;
+  width: 200px;
   margin-right: 20px;
   background: #1f1f1f;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.our_cars h2 {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  margin-bottom: 1rem;
+
+}
+
+.our_cars h2 span.our {
+  color: #ca1d1d;
+  /* Red color for "OUR" */
+}
+
+.our_cars h2 span.cars {
+  color: #ffffff;
+  /* White color for "Cars" */
+}
+
+.our_cars ul li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
 .car-image img {
@@ -360,31 +408,63 @@ p {
   padding: 20px;
 }
 
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+
 .technical-specs,
 .achievements {
   margin-top: 20px;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 10px;
 }
 
 h10 {
-  font-family: 'Siegra'; 
-color: #ca1d1d;
-font-size: 3vw;
-   
+  font-family: 'Siegra';
+  color: #ca1d1d;
+  font-size: 3vw;
+
 }
 
-h9
-{
-  font-family: 'Siegra'; 
-color: #fafafa;
-font-size: 1vw;
+h9 {
+  font-family: 'Siegra';
+  color: #fafafa;
+  font-size: 1vw;
 }
 
-/* our cars*/
+.slick-prev {
+  display: none !important;
+  /* Hide the default previous button */
+}
+
+.slick-next {
+  display: none !important;
+}
+
 /* our events*/
 .events {
   padding: 50px;
@@ -400,22 +480,27 @@ font-size: 1vw;
   background-image: url('../images/fb_event.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Set the background to be fixed */
+  background-attachment: fixed;
+  /* Set the background to be fixed */
   background-position: center bottom 20%;
 }
+
 .events h2 span.Our {
   font-family: 'Siegra';
   font-size: 5rem;
-  color: #ca1d1d; /* Red color for "OUR" */
+  color: #ca1d1d;
+  /* Red color for "OUR" */
   margin-bottom: 1rem;
 }
 
 .events h2 span.Events {
   font-family: 'Siegra';
   font-size: 5rem;
-  color: #ffffff; /* White color for "Cars" */
+  color: #ffffff;
+  /* White color for "Cars" */
   margin-bottom: 1rem;
 }
+
 .event-container {
   display: flex;
   flex-wrap: wrap;
@@ -424,8 +509,11 @@ font-size: 1vw;
 }
 
 .event-card {
-  width: 400px;
-  background:  #1f1f1f;
+  flex: 1 1 300px;
+  /* Adjust the width here */
+  max-width: 400px;
+  /* Add a maximum width for larger screens */
+  background: #1f1f1f;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -444,7 +532,8 @@ font-size: 1vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #ff1a1a; /* Red color for event titles */
+  color: #ff1a1a;
+  /* Red color for event titles */
 }
 
 .event-description {
@@ -460,9 +549,9 @@ font-size: 1vw;
   border: 1px solid #fff;
   padding: 10px 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .contact-button:hover {
@@ -470,17 +559,30 @@ font-size: 1vw;
   color: #000;
 }
 
+/* Media query for tablets and smaller screens */
+@media (max-width: 991px) {
+  .event-card {
+    flex-basis: calc(50% - 50px);
+    /* Adjust width for smaller screens */
+    max-width: none;
+    /* Remove max-width for smaller screens */
+  }
+}
+
 /* Media query for mobile devices */
 @media (max-width: 767px) {
-  .contact-button {
-    margin-top: 10px; /* Adjust the margin-top for mobile */
+  .event-card {
+    flex-basis: calc(100% - 50px);
+    /* Adjust width for mobile */
+    max-width: none;
+    /* Remove max-width for mobile */
   }
 }
 
 
-/* Our team members */
-/* CSS Styles */
-.team-members {
+/*sponsor*/
+.sponsor-section {
+
   padding: 50px;
   background: #010101;
   text-align: center;
@@ -492,274 +594,175 @@ font-size: 1vw;
   min-height: 100vh;
   width: 100vw;
   background-color: #000;
+  /*background-image: url('../images/team_car.JPG');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* Set the background to be fixed */
   background-position: center bottom 20%;
-  color: #ffffff;
-}
-
-
-.team-members h2 {
-  font-family: 'Siegra';
-  font-size: 5rem;
-  margin-bottom: 2rem;
-}
-
-.role {
-  margin-bottom: 1rem;
-}
-
-.role-title {
-  font-family: 'Siegra';
-  font-size: 2rem;
-  color: #ff1a1a;
-}
-/* Set a fixed height for role containers */
-.department-heads .role {
-  height: 80px; /* Adjust the height as needed */
-  /* Add other styling properties as needed */
-}
-
-/* Adjust styling for role titles and member names */
-.department-heads .role-title,
-.department-heads .member-name {
-  margin: 0; /* Reset margin */
-}
-
-
-
-.member-name {
-  margin-bottom: 0.5  rem;
-}
-
-.management {
-  display: flex;
-  justify-content: space-around;
-}
-
-
-/* Adjust styling as needed */
-
-
-/*sponsor*/
-.sponsor-section {
-  
-  padding: 50px;
-  background: #010101;
-  text-align: center;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  overflow: hidden;
-  min-height: 100vh;
-  width: 100vw;
-  background-image: url('../images/team_car.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Set the background to be fixed */
-  background-position: center bottom 20%;
+  /* Add position relative to the container */
 }
 
-.sponsor-images img {
-  width: 200px; /* Set the width of sponsor images */
-  margin: 10px; /* Add space around each sponsor image */
-}
-.red-text {
-  color: #ff0026; /* Red color */
-}
-.thank-you-message {
-  margin-top: 20px; /* Add space between sponsor images and thank you message */
-}
-.thank-you-message h2{
-  font-family: 'Siegra';
-}
-.thank-you-message p{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.download-box {
-  margin-top: 40px; /* Add space between thank you message and download box */
-}
-.download-box h3{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.download-box p{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.clickable-box {
-  display: inline-block;
-  padding: 10px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.clickable-box p{
-  font-family: 'Siegra';
-  color: #ca1d1d;
-}
-.download-link {
-  text-decoration: none;
-  color: #f60000;
-}
-
-/*footer section*/
-.page-footer {
-  background:#000000;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 13px;
-}
-@font-face {
-  font-family: "Racing Games";
-  font-family: 'Speedster'; 
-  src: url('../fonts/Speedster.ttf') format('truetype'); 
-  src: url('../fonts/Speedster.otf') format('opentype'); 
-  
-  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot");
-  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.svg#Speedster")format("svg");
-}
-@font-face{
-  font-family: "Siegra";
-  src: url('../fonts/Siegra.ttf') format('truetype'); 
-  src: url('../fonts/Siegra.otf') format('opentype'); 
-}
-
-#example {
-  background-color: #1f1f1f;
-  padding: 50px 0;
-}
-
-.card {
-  background-color: #333;
-  color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border: 5px solid #ff0026;
-  border-radius: 5px;
-}
-
-.card p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.read-more {
-  color: #ff0026;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.read-more:hover {
-  color: #fff;
-}
-
-.hero img {
-  object-position: center top; /* Adjust this to move the image up in the slider */
-}
-
-.about .card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.about .card {
-  position: relative;
-  height: 400px; /* Increase the height of the card */
-}
-
-.about .card p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-}
-
-.flip-container {
-  perspective: 1000px;
-  height: 400px; /* Increase the height of the flip container */
-}
-
-.flip-container:hover .flipper,
-.flip-container.flip .flipper {
-  transform: rotateY(180deg);
-}
-
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-  height: 100%;
-}
-
-.front,
-.back {
-  backface-visibility: hidden;
+.sponsor-section::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  ;
+  /* Adjust the transparency by changing the last value */
+  z-index: -1;
+}
+.sponsor-section h3 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.sponsor-section h2 span.Our {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  color: #ca1d1d;
+  /* Red color for "OUR" */
+  margin-bottom: 1rem;
 }
 
-.front {
-  z-index: 2;
+.sponsor-section h2 span.Sponsors {
+  font-family: 'Siegra';
+  font-size: 5rem;
+  color: #ffffff;
+  /* White color for "Cars" */
+  margin-bottom: 1rem;
 }
 
-.back {
-  transform: rotateY(180deg);
+.sponsor-images img {
+  width: 200px;
+  /* Set the width of sponsor images */
+  margin: 10px;
+  /* Add space around each sponsor image */
 }
-.flip-box {
+.sponsorship-levels {
+  margin-top: 30px;
   display: flex;
-  align-items: stretch;
-  perspective: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sponsorship-levels h5{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card {
+  width: calc(50% - 20px); /* Adjust width for smaller screens */
+  margin-bottom: 20px;
+  color: #fff; /* Change text color to white */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
 }
 
-.flip-box-inner {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
+.card:hover {
+  transform: translateY(-5px); /* Add slight upward movement on hover */
 }
 
-.footer-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+.card-body {
+  padding: 20px;
+}
+.title {
+  width: 100%; /* Take up full width */
+  background-color: #ff4500; /* Change background color for title sponsor */
+  color: #fff; /* Change text color to white */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Add transition for hover effect */
+  border: 2px solid transparent; /* Add transparent border initially */
 }
 
-.flip-box-front,
-.flip-box-back {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.title:hover {
+  transform: translateY(-5px); /* Add slight upward movement on hover */
+  border-color: #fff; /* Change border color on hover to white */
 }
 
-.social-icons {
-  list-style: none; /* Remove default list styles */
-  padding: 0; /* Remove default padding */
+
+.platinum {
+  background-color: #4CAF50; /* Change background color for platinum */
 }
 
-.social-icons li {
-  margin-bottom: 10px; /* Add space between each social icon */
+.gold {
+  background-color: #FFD700; /* Change background color for gold */
 }
 
-.social-icons a {
-  margin-right: 10px; /* Add space between the icon and the text */
+.silver {
+  background-color: #B0C4DE; /* Change background color for silver */
 }
-.flip-box-back {
-  transform: rotateY(180deg);
+
+.bronze {
+  background-color: #CD7F32; /* Change background color for bronze */
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.red-text {
+  color: #ff0026;
+}
+
+.thank-you-message {
+  margin-top: 20px;
+  /* Add space between sponsor images and thank you message */
+}
+
+.thank-you-message h2 {
+  font-family: 'Siegra';
+}
+
+.thank-you-message p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sponsor-container {
+  overflow: hidden;
+}
+
+.sponsor-images {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  /* Adjust the animation duration as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@font-face {
+  font-family: "Racing Games";
+  font-family: 'Speedster';
+  src: url('../fonts/Speedster.ttf') format('truetype');
+  src: url('../fonts/Speedster.otf') format('opentype');
+
+  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot");
+  src: url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/abf8d4815b7b0c06e3e0cb4431e9853e.svg#Speedster")format("svg");
+}
+
+@font-face {
+  font-family: "Siegra";
+  src: url('../fonts/Siegra.ttf') format('truetype');
+  src: url('../fonts/Siegra.otf') format('opentype');
 }

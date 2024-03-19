@@ -1,0 +1,272 @@
+/* Import fonts */
+@import url('https://db.onlinewebfonts.com/c/abf8d4815b7b0c06e3e0cb4431e9853e?family=Speedster');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+    font-family: "Speedster";
+    src: url('../fonts/Speedster.ttf') format('truetype');
+    src: url('../fonts/Speedster.otf') format('opentype');
+}
+
+/* Global styles */
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* Adjust as needed */
+}
+
+.navbar {
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-icon {
+    width: 60px;
+    /* Adjust the width to your preference */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ca1d1d;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+    color: #00bfff;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ca1d1d;
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .desktop-logo {
+        display: none;
+        /* Hide the logo on mobile view */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #070707;
+        text-align: center;
+        left: 0;
+        top: 60px;
+        /* Adjust this value based on your header's height */
+        z-index: 1;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+}
+
+/* Team section styles */
+#team {
+    margin: 75px 0;
+}
+
+#team h2 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    /* Updated font family */
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffffff;
+    /* Updated font color */
+    padding-bottom: 10px;
+}
+
+#team h2:after {
+    content: '';
+    background: #636e72;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+}
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile .img-box {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.profile h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    /* Updated font family */
+    font-weight: 400;
+    color: #ffffff;
+    /* Updated font color */
+    text-transform: capitalize;
+}
+
+.profile h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    /* Updated font family */
+    font-weight: 400;
+    color: #ff1a1a;
+    /* Updated font color */
+    text-transform: capitalize;
+}
+
+.img-box:after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    position: absolute;
+    margin: 0;
+    padding: 50px 0;
+    z-index: 1;
+    bottom: 0;
+    opacity: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover:after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover li {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.img-box:after,
+.img-box ul,
+.img-box ul li {
+    transition: all linear .3s;
+}
+
+/* Department section styles */
+/* Department section styles */
+.department-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.department-list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.department-box {
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.department-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .department-list {
+        display: block;
+    }
+
+    .department-box {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+}

@@ -1,0 +1,164 @@
+/* Global styles */
+@import url('https://db.onlinewebfonts.com/c/abf8d4815b7b0c06e3e0cb4431e9853e?family=Speedster');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+  font-family: "Speedster";
+  src: url('../fonts/Speedster.ttf') format('truetype');
+  src: url('../fonts/Speedster.otf') format('opentype');
+}
+
+/* Global styles */
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  /* Adjust as needed */
+}
+
+.navbar {
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo-icon {
+    width: 60px;
+    /* Adjust the width to your preference */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 1rem;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #ca1d1d;
+    font-size: 1.5rem;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-list a:hover {
+    color: #00bfff;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ca1d1d;
+    margin: 6px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .desktop-logo {
+      display: none;
+      /* Hide the logo on mobile view */
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      background-color: #070707;
+      text-align: center;
+      left: 0;
+      top: 60px;
+      /* Adjust this value based on your header's height */
+      z-index: 1;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  }
+
+/* Gallery styles */
+#gallery {
+  padding: 4rem 0;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  color: aliceblue;
+  padding: 1rem 2rem; /* Increase padding for better spacing */
+  border-radius: 30px; /* Adjust the value to control the curvature */
+  border: 2px solid #ca1d1d;; /* Border color */
+  
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.year {
+  width: 45%;
+  margin-bottom: 2rem;
+}
+
+.year h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .year {
+    width: 100%;
+  }
+}
