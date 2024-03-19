@@ -122,9 +122,6 @@ body {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 500;
   color: aliceblue;
-  padding: 1rem 2rem; /* Increase padding for better spacing */
-  border-radius: 30px; /* Adjust the value to control the curvature */
-  border: 2px solid #ca1d1d;; /* Border color */
   
 }
 
