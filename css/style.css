@@ -255,7 +255,7 @@ body {
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/helmet_bg.JPG');
+  background-image: url('../images/helmet_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -353,7 +353,7 @@ p {
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/cockpit.JPG');
+  background-image: url('../images/cockpit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -477,7 +477,7 @@ h9 {
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/fb_event.JPG');
+  background-image: url('../images/fb_event.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
