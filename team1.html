@@ -799,14 +799,15 @@ AMOOLYA GARG	ELECTRICAL HEAD -->
     </script>
     <script>
         // Function to continuously scroll the department team members container
-        function startScrollAnimation(departmentId) {
+         function startScrollAnimation(departmentId) {
             var departmentElement = document.getElementById(departmentId);
-            setInterval(function () {
-                departmentElement.scrollLeft += 2; // Adjust scrolling speed as needed
+            var scrollAmount = 2; // Adjust scrolling speed as needed
+            var scrollInterval = setInterval(function () {
+                departmentElement.scrollLeft += scrollAmount;
                 if (departmentElement.scrollLeft >= (departmentElement.scrollWidth - departmentElement.clientWidth)) {
-                    departmentElement.scrollLeft = 0; // Reset scroll position to start
+                    departmentElement.scrollLeft = 0;
                 }
-            }, 50); // Adjust scroll animation interval as needed
+            }, 30); 
         }
 
         // Start scroll animation for each department on page load
