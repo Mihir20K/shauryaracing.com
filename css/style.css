@@ -42,14 +42,14 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #ca1d1d;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Impact,'Arial Narrow Bold', sans-serif;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
 .nav-list a:hover {
-  color: #00bfff;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -115,7 +115,7 @@ body {
   background-attachment: fixed;
 }
 
-.home home-background-image {
+.home-background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -255,7 +255,7 @@ body {
   overflow: hidden;
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/helmet_bg.jpg');
+  background-image: url('../images/helmet_bg.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -292,7 +292,7 @@ h1 {
 }
 
 p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 2.2rem;
   line-height: 3rem;
   color: #fff;
@@ -357,7 +357,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* Set the background to be fixed */
+
   background-position: center bottom 20%;
 }
 
@@ -370,6 +370,7 @@ p {
 
 .car-card {
   width: 200px;
+  height: 400px;
   margin-right: 20px;
   background: #1f1f1f;
   border-radius: 10px;
@@ -395,7 +396,7 @@ p {
 }
 
 .our_cars ul li {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -439,7 +440,7 @@ p {
 h2,
 h3,
 h4 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
   margin-bottom: 10px;
 }
 
@@ -464,6 +465,16 @@ h9 {
 .slick-next {
   display: none !important;
 }
+@media (max-width: 768px) {
+  .car-details h10 {
+    font-size: 8vw; 
+  }
+
+  .car-details h9 {
+    font-size: 4vw; 
+  }
+}
+
 
 /* our events*/
 .events {
@@ -517,6 +528,9 @@ h9 {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: space-between;
 }
 
 .event-card img {
@@ -526,6 +540,7 @@ h9 {
 
 .event-details {
   padding: 20px;
+  flex: 1;
 }
 
 .event-title {
@@ -594,9 +609,9 @@ h9 {
   min-height: 100vh;
   width: 100vw;
   background-color: #000;
-  background-image: url('../images/Potrait.JPG');
+  /*background-image: url('../images/Potrait.JPG');*/
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-attachment: fixed;
   /* Set the background to be fixed */
   background-position: center bottom 20%;
@@ -670,7 +685,7 @@ h9 {
 }
 .title {
   width: 100%; /* Take up full width */
-  background-color: #ff4500; /* Change background color for title sponsor */
+  background-color: #e70808; /* Change background color for title sponsor */
   color: #fff; /* Change text color to white */
   border-radius: 10px; /* Add border-radius for rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
@@ -683,21 +698,20 @@ h9 {
   border-color: #fff; /* Change border color on hover to white */
 }
 
-
 .platinum {
-  background-color: #4CAF50; /* Change background color for platinum */
+  background-color: #3498db; /* Royal blue */
 }
 
 .gold {
-  background-color: #FFD700; /* Change background color for gold */
+  background-color: #f1c40f; /* Sunflower yellow */
 }
 
 .silver {
-  background-color: #B0C4DE; /* Change background color for silver */
+  background-color: #95a5a6; /* Concrete gray */
 }
 
 .bronze {
-  background-color: #CD7F32; /* Change background color for bronze */
+  background-color: #e67e22; /* Carrot orange */
 }
 
 .card-title {
@@ -710,7 +724,7 @@ h9 {
 }
 
 .red-text {
-  color: #ff0026;
+  color: #ca1d1d;
 }
 
 .thank-you-message {
