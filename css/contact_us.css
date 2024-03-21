@@ -45,14 +45,14 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #ca1d1d;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Impact,'Arial Narrow Bold', sans-serif;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
 .nav-list a:hover {
-  color: #00bfff;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -87,7 +87,6 @@ body {
     text-align: center;
     left: 0;
     top: 60px;
-    /* Adjust this value based on your header's height */
     z-index: 1;
   }
 
@@ -115,7 +114,7 @@ body {
 }
 
 .contact-bg {
-  margin-top: -7rem;
+  margin-top: -20rem;
   height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   /* , url(images/contact-bg.jpg) */
@@ -137,7 +136,7 @@ body {
 }
 
 .contact-bg h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: uppercase;
   padding: 0.4rem 0;
   letter-spacing: 4px;
@@ -191,13 +190,13 @@ body {
 .contact-body {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
 .contact-info {
-  margin: 2rem 0;
+  margin: 0rem 0;
   text-align: center;
-  padding: 2rem 0;
+  padding: 0rem 0;
 }
 
 .contact-info span {
@@ -233,7 +232,7 @@ body {
 
 .contact-info span .fas:hover {
   /* color: #d157c5; */
-  color: rgb(100, 203, 245);
+  color: rgb(255, 255, 255);
   border-color: #ca1d1d;
 
   /* border-color: #f7327a; */
@@ -241,7 +240,7 @@ body {
 
 .contact-info span .fab:hover {
   /* color: #d157c5; */
-  color: rgb(100, 203, 245);
+  color: rgb(255, 255, 255);
   border-color: #ca1d1d;
 
   /* border-color: #f7327a; */
@@ -272,13 +271,13 @@ body {
 
 .form-control {
   width: 100%;
-  /* border: 1.5px solid #c7c7c7; */
+  border: 1.5px solid #c7c7c7; 
   background-color: var(--color-bg2);
   border-radius: 5px;
   padding: 0.7rem;
   margin: 0.6rem 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   outline: 0;
   color: #fff;
 }
@@ -314,7 +313,7 @@ body {
 
 .send-btn:hover {
   /* opacity: 0.8; */
-  background: rgb(100, 203, 245);
+  background: rgb(255, 255, 255);
   /* background: #e383a6e9; */
   color: #fff;
 }
@@ -357,11 +356,10 @@ iframe {
 
 .social-links a {
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   /* color: #fff; */
   color: #ca1d1d;
-
   border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
@@ -373,9 +371,9 @@ iframe {
 
 .social-links a:hover {
   /* color: #f7327a; */
-  color: rgb(100, 203, 245);
+  color: rgb(255, 255, 255);
   /* border-color: #f7327a; */
-  border-color: rgb(100, 203, 245);
+  border-color: rgb(255, 255, 255);
   transform: translateY(-8px);
 }
 
